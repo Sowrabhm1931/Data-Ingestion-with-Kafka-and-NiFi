@@ -1,0 +1,9 @@
+# Ignore virtual environment
+kafka_env/
+
+# Ignore Python cache files
+_pycache_/
+*.py[cod]
+
+# Ignore VS Code settings
+.vscode/
