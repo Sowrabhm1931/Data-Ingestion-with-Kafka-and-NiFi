@@ -73,7 +73,7 @@ p.poll(1)
 p.flush()
 
 #### `consumer.py`
-
+```python
 from confluent_kafka import Consumer, KafkaException, KafkaError
 
 conf = {
@@ -101,3 +101,15 @@ except KeyboardInterrupt:
     pass
 finally:
     c.close()
+
+### Step 4: Run the Scripts
+
+1. Run the producer:
+    ```bash
+    python producer.py
+    ```
+
+2. Run the consumer:
+    ```bash
+    python consumer.py
+    ```
