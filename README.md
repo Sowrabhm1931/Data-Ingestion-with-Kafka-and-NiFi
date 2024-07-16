@@ -113,3 +113,47 @@ finally:
     ```bash
     python consumer.py
     ```
+
+## Configuring `.gitignore`
+
+A `.gitignore` file is included in the repository to ensure that certain files and directories, such as virtual environments and other environment-specific files, are not tracked by Git.
+
+```plaintext
+# .gitignore
+kafka-env/
+```
+
+### Setting Up Virtual Environment
+
+1. **Create Virtual Environment**:
+
+    ```bash
+    python3 -m venv kafka-env
+    ```
+
+2. **Activate Virtual Environment**:
+
+    ```bash
+    source kafka-env/bin/activate  # On Windows use `kafka-env\Scripts\activate`
+    ```
+
+3. **Install Requirements**:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Project Structure
+
+- `producer.py`: Python script to produce messages to the Kafka topic.
+- `consumer.py`: Python script to consume messages from the Kafka topic.
+- `requirements.txt`: Python dependencies.
+- `.gitignore`: Git ignore file to exclude specific files and directories from being tracked by Git.
+- `README.md`: Project documentation.
+
+## License
+
+This project is licensed under the MIT License.
+```
+
+This document should provide comprehensive instructions for setting up and running your project, including the necessary `.gitignore` configuration and usage of the Python scripts.
